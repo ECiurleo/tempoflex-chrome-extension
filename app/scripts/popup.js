@@ -1,4 +1,4 @@
-const popupUtils = require('./lib/popupUtils')
+import * as popupUtils from './lib/popupUtils'
 
 popupUtils.getFlex()
 .then(flex => {

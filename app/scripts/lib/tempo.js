@@ -1,7 +1,7 @@
-const TempoError = require('./errorUtils').TempoError
-const dateUtils = require('./dateUtils')
+import TempoError from './errorUtils'
+import * as dateUtils from './dateUtils'
 
-class Tempo {
+export default class Tempo {
     constructor(settings) {
         this.settings = settings
         this.generateDateStrings()
@@ -213,5 +213,3 @@ class Tempo {
             })
     }
 }
-
-module.exports = Tempo
